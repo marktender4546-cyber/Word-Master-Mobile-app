@@ -1,0 +1,37 @@
+WORD MASTER — APK YARATISH (ANDROID STUDIO'SIZ, BEPUL)
+
+ENG OSON YO'L: GitHub Actions
+
+1. https://github.com saytiga kiring va akkauntingizga login qiling.
+2. O'ng yuqoridagi + tugmasini bosing va New repository tanlang.
+3. Repository name: WordMaster deb yozing.
+4. Public ni tanlang (GitHub standart hosted runnerlar public repozitoriyda bepul).
+5. Create repository tugmasini bosing.
+6. Repository sahifasida Add file > Upload files ni tanlang.
+7. ZIP arxivni avval kompyuterda Extract All qilib chiqaring.
+8. Chiqarilgan WordMaster papkasining ICHIDAGI BARCHA fayl va papkalarni GitHub upload oynasiga tashlang.
+   MUHIM: .github yashirin papkasi ham yuklanganini tekshiring. Windows File Explorer'da View > Show > Hidden items ni yoqing.
+   GitHub'da .github/workflows/build-apk.yml fayli ko'rinishi kerak.
+9. Pastga tushib Commit changes tugmasini bosing.
+10. Repository ichidagi Actions bo'limini oching.
+11. Chap tomondan Build Word Master APK workflow'ini tanlang.
+12. Run workflow > Run workflow tugmalarini bosing.
+13. Jarayon tugaguncha kuting. Yashil belgi (Success) chiqishi kerak.
+14. Workflow bajarilgan sahifani oching. Pastdagi Artifacts bo'limidan WordMaster-debug-APK ni yuklab oling.
+15. Yuklangan artifact ZIP faylini Extract All qiling. Ichidan app-debug.apk chiqadi.
+16. app-debug.apk faylini Android telefoningizga yuboring va telefonda ochib o'rnating.
+
+AGAR GITHUB UPLOADDA .github PAPKASI KO'RINMASA:
+- GitHub repository ichida Add file > Create new file ni bosing.
+- Fayl nomi maydoniga aynan quyidagini kiriting:
+  .github/workflows/build-apk.yml
+- ZIP ichidagi .github/workflows/build-apk.yml faylining to'liq matnini joylang va Commit changes qiling.
+- So'ng qolgan loyiha fayllarini upload qiling.
+
+MUHIM:
+- Ushbu usul Android Studio o'rnatishni talab qilmaydi.
+- Google Cloud/API kaliti talab qilinmaydi.
+- Public repository'da GitHub-hosted standard runnerlar bepul.
+- Public repo bo'lsa, loyiha kodi ommaga ko'rinadi. Maxfiy ma'lumot yoki parol joylamang.
+- Build natijasi APK fayl bo'ladi; bu jarayon telefonning o'zida avtomatik o'rnatmaydi.
+- Agar Actions xato bersa, qizil xato satrlarini yoki log oxiridagi xabarni yuboring.

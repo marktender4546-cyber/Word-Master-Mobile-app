@@ -1,0 +1,3 @@
+# Android Studio local.properties faylingizda SDK yo'li allaqachon bo'lishi mumkin.
+# Quyidagi qatordan keyin API kalitingizni kiriting:
+WORD_MASTER_TRANSLATE_API_KEY=BU_YERGA_GOOGLE_API_KEY
